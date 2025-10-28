@@ -1,0 +1,14 @@
+optimize_xt: true
+optimize_xt_interval_list:
+  - [0, 60]
+  - [225, 250]
+use_mask_interval_list:
+  - [225,250]
+num_iteration_optimize_xt: 4
+lr_xt: 0.02
+lr_xt_decay: 1.012
+use_adaptive_lr_xt: true
+coef_xt_reg: 0.0001
+coef_xt_reg_decay: 1.01
+use_smart_lr_xt_decay: true
+mid_interval_num: 1
