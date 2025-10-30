@@ -11,10 +11,10 @@ Authentic Defect Image Generation via Local Patch Synthesis with Structure Guida
 
 # Checkpoints
 All the checkpoints can be downloaded from the following links. And some checkpoints should be placed at the corresponding directory.
-| Data and Models                          | Download                                                                                                    | Place at                         |
-|------------------------------------------|-----------------------------------------                                                                    |----------------------------------|
-| Checkpoints for defect generation model  | [Google Drive](https://drive.google.com/drive/folders/1SXWqeQsvFmXdcNOugFKvp17Q4VLPnIYW?usp=drive_link)     | `logs/anomaly-checkpoints`       |
-| Checkpoints for mask generation model    | [Google Drive](https://example.com)                                                                         | `logs/mask-checkpoints`          |
-| Checkpoints for anomaly localization     | [Google Drive](https://example.com)                                                                         | `checkpoints/localization`       |
-| Checkpoints for anomaly classification   | [Google Drive](https://example.com)                                                                         | `checkpoints/classification`     |
+| Data and Models                          | Download                                                                                                    | Place at                                 |
+|------------------------------------------|-----------------------------------------                                                                    |----------------------------------        |
+| Checkpoints for defect generation model  | [Google Drive](https://drive.google.com/drive/folders/1SXWqeQsvFmXdcNOugFKvp17Q4VLPnIYW?usp=drive_link)     | Place in `OUTPUT`                        |
+| Checkpoints for models of SD-V-1.4       | [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/blob/main/sd-v1-4.ckpt)       | Place in the root directory              |
+| Checkpoints for  models of clip          | [Google Drive](https://huggingface.co/openai/clip-vit-large-patch14/tree/main)                              | Place in `openai/clip-vit-large-patch14` |
+
 
