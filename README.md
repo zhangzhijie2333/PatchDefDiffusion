@@ -1,7 +1,7 @@
 # PatchDefDiffusion
 Authentic Defect Image Generation via Local Patch Synthesis with Structure Guidance and Non-Defect Area Reconstruction
 <img width="4426" height="1277" alt="1" src="https://github.com/user-attachments/assets/eb9d1fe1-1ed9-45d3-9627-f600bba2efc6" />
-# Dataset
+## Dataset
 1.Download the dataset [PKU-Market-PCB](https://robotics.pkusz.edu.cn/resources/dataset/)  
 2.Crop the defect images to the configured PATCH_SIZE. Using identical coordinates and dimensions, crop the corresponding regions from the paired normal images and extract the edge maps for those regions. Name both outputs using the convention <defect_name>_<index>. Place the edge maps in ".DATA/PCB2/dataset/train/Ground_truth" and the defect images in ".DATA/PCB2/dataset/train/Source_Images".
 <p align="center">
@@ -9,7 +9,7 @@ Authentic Defect Image Generation via Local Patch Synthesis with Structure Guida
 </p>  
 3.Generate a "caption.json" file for the dataset by referring to "process_json_pcb.py". 
 
-# Checkpoints
+## Checkpoints
 All the checkpoints can be downloaded from the following links. And some checkpoints should be placed at the corresponding directory.
 | Data and Models                          | Download                                                                                                    | Place at                                 |
 |------------------------------------------|-----------------------------------------                                                                    |----------------------------------        |
@@ -17,7 +17,7 @@ All the checkpoints can be downloaded from the following links. And some checkpo
 | Checkpoints for models of SD-V-1.4       | [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/blob/main/sd-v1-4.ckpt)       | Place in the root directory              |
 | Checkpoints for  models of clip          | [Hugging Face](https://huggingface.co/openai/clip-vit-large-patch14/tree/main)                              | Place in `openai/clip-vit-large-patch14` |
 
-# Prepare
+## Prepare
 ### (1) Prepare the environment
 ```bash
 # Install dependencies (requirements)
@@ -29,11 +29,11 @@ pip install -r requirements.txt
 ```bash
  python process_json_pcb.py
 ```
-# Train the Patch-level defect model
+## Train the Patch-level defect model
 ```bash
  python main.py
 ```
-# Inference
+## Inference
 Before performing inference, please place the reference images into the "./inference_img/" folder in the project root directory.
 ```bash
   python infer_PCB2_New.py --no_plms    
@@ -43,7 +43,7 @@ The defect location can be manually specified.
  <img width="422" height="73" alt="image" src="https://github.com/user-attachments/assets/8bce45f8-acf6-4d59-b946-70624b3c939f" />
 </p> 
 
-# Citation
+## Citation
 If you make use of our work, please cite our paper:
 ```bash
 
