@@ -27,16 +27,16 @@ pip install -r requirements.txt
 
 ### (3) Prepare Dataset and Generate a "caption.json" file
 ```bash
- python process_json_pcb.py
+python process_json_pcb.py
 ```
 ## Train the Patch-level defect model
 ```bash
- python main.py
+python main.py
 ```
 ## Inference
 Before performing inference, please place the reference images into the "./inference_img/" folder in the project root directory.
 ```bash
-  python infer_PCB2_New.py --no_plms    
+python infer_PCB2_New.py --no_plms    
 ```
 
 ## Citation
