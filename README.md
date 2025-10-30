@@ -15,6 +15,25 @@ All the checkpoints can be downloaded from the following links. And some checkpo
 |------------------------------------------|-----------------------------------------                                                                    |----------------------------------        |
 | Checkpoints for defect generation model  | [Google Drive](https://drive.google.com/drive/folders/1SXWqeQsvFmXdcNOugFKvp17Q4VLPnIYW?usp=drive_link)     | Place in `OUTPUT`                        |
 | Checkpoints for models of SD-V-1.4       | [Hugging Face](https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/blob/main/sd-v1-4.ckpt)       | Place in the root directory              |
-| Checkpoints for  models of clip          | [Google Drive](https://huggingface.co/openai/clip-vit-large-patch14/tree/main)                              | Place in `openai/clip-vit-large-patch14` |
+| Checkpoints for  models of clip          | [Hugging Face](https://huggingface.co/openai/clip-vit-large-patch14/tree/main)                              | Place in `openai/clip-vit-large-patch14` |
 
+# Prepare
+## (1) Prepare the environment
+```bash
+# Install dependencies (requirements)
+pip install -r requirements.txt
+```
+## (2) Checkpoint for SD-V-1.4 and clip 
 
+## (3) Prepare Dataset and Generate a "caption.json" file
+```bash
+ python process_json_pcb.py
+```
+# Train the Patch-level defect model
+```bash
+ python main.py
+```
+# Inference
+```bash
+  python infer_PCB2_New.py --no_plms    
+```
