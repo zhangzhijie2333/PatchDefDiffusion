@@ -18,14 +18,14 @@ All the checkpoints can be downloaded from the following links. And some checkpo
 | Checkpoints for  models of clip          | [Hugging Face](https://huggingface.co/openai/clip-vit-large-patch14/tree/main)                              | Place in `openai/clip-vit-large-patch14` |
 
 # Prepare
-## (1) Prepare the environment
+### (1) Prepare the environment
 ```bash
 # Install dependencies (requirements)
 pip install -r requirements.txt
 ```
-## (2) Checkpoint for SD-V-1.4 and clip 
+### (2) Checkpoint for SD-V-1.4 and clip 
 
-## (3) Prepare Dataset and Generate a "caption.json" file
+### (3) Prepare Dataset and Generate a "caption.json" file
 ```bash
  python process_json_pcb.py
 ```
