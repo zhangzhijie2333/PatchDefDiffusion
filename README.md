@@ -38,10 +38,6 @@ Before performing inference, please place the reference images into the "./infer
 ```bash
   python infer_PCB2_New.py --no_plms    
 ```
-The defect location can be manually specified.
-<p align="center">
- <img width="422" height="73" alt="image" src="https://github.com/user-attachments/assets/8bce45f8-acf6-4d59-b946-70624b3c939f" />
-</p> 
 
 ## Citation
 If you make use of our work, please cite our paper:
